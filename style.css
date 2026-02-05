@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  gap: 2px;
+  justify-content: center;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #bdbdbd;
+  border: 1px solid #999;
+  cursor: pointer;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.cell.revealed {
+  background: #e0e0e0;
+  cursor: default;
+}
+
+.cell.mine {
+  background: red;
+}
